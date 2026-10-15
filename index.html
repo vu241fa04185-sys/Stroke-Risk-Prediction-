@@ -336,6 +336,32 @@
         <div class="cm-container" id="cmGridContainer"></div>
       </div>
 
+      <!-- Heatmap Gallery -->
+      <div class="card">
+        <h2>&#129513; Reference-Styled Confusion Matrix Heatmaps (Rocket Colormap)</h2>
+        <p style="font-size: 11px; color: var(--text-muted); margin-bottom: 12px;">
+          Rendered with Prediction (top), Actual (left), and square rocket heatmap matching clinical reference standards.
+        </p>
+        <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 12px;">
+          <div style="background: #0f172a; padding: 8px; border-radius: 8px; border: 1px solid var(--card-border); text-align: center;">
+            <div style="font-size: 11px; font-weight: 600; color: var(--accent); margin-bottom: 4px;">SMOTE Train (99.6% Acc)</div>
+            <img src="confusion_matrix_training.png" style="width: 100%; border-radius: 6px;" alt="SMOTE Train CM">
+          </div>
+          <div style="background: #0f172a; padding: 8px; border-radius: 8px; border: 1px solid var(--card-border); text-align: center;">
+            <div style="font-size: 11px; font-weight: 600; color: var(--accent); margin-bottom: 4px;">Hybrid 1: LogReg Meta</div>
+            <img src="confusion_matrix_hybrid1.png" style="width: 100%; border-radius: 6px;" alt="Hybrid 1 CM">
+          </div>
+          <div style="background: #0f172a; padding: 8px; border-radius: 8px; border: 1px solid var(--card-border); text-align: center;">
+            <div style="font-size: 11px; font-weight: 600; color: var(--accent); margin-bottom: 4px;">Hybrid 2: Tree Meta</div>
+            <img src="confusion_matrix_hybrid2.png" style="width: 100%; border-radius: 6px;" alt="Hybrid 2 CM">
+          </div>
+          <div style="background: #0f172a; padding: 8px; border-radius: 8px; border: 1px solid var(--card-border); text-align: center;">
+            <div style="font-size: 11px; font-weight: 600; color: var(--accent); margin-bottom: 4px;">Hybrid 3: KNN Meta</div>
+            <img src="confusion_matrix_hybrid3.png" style="width: 100%; border-radius: 6px;" alt="Hybrid 3 CM">
+          </div>
+        </div>
+      </div>
+
       <!-- Real Curves -->
       <div class="card">
         <h2>&#128165; Verified ROC Curves Comparison</h2>
